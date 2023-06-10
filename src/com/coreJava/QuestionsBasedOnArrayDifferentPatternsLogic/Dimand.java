@@ -19,6 +19,8 @@ System.out.println("Print half of the dimand ");
 						System.out.print(" ");
 
 					}
+					
+					
 					for(k=1;k<=(2*i-1);k++)
 					{
 
