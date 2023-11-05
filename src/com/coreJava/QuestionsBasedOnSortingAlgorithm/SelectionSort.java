@@ -8,7 +8,8 @@ public class SelectionSort {
 
 		for (int i = 0; i < arr.length - 1; i++) {
 			temp = arr[i];
-			for (int j = i; j < arr.length; j++) {
+			for (int j = i; j < arr.length; j++) 
+			{
 				if (temp > arr[j]) {
 					temp = arr[j];
 					pos = j;
