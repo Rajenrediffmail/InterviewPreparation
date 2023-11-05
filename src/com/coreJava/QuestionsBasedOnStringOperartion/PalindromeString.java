@@ -4,9 +4,9 @@ import java.util.Scanner;
 
 /*
  *I want reverse string equal to original then thats are palindrome
- * First i want store orignal string requried variable
+ * First i want store original string required variable
  * then   reverse string and store another variable
- * then using if condation comparied
+ * then using if condition compared
  */
 
 public class PalindromeString {

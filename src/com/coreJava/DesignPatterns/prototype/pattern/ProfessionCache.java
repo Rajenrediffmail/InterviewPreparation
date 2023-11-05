@@ -6,7 +6,6 @@ public class ProfessionCache {
 	
 	private static Hashtable<Integer, Profession> professionMap  = new Hashtable<Integer, Profession>();
 	
-
 	   public static Profession getCloneNewProfession(int id) {
 		   Profession cachedProfessionInstance = professionMap.get(id);
 	      return (Profession) cachedProfessionInstance.cloningMethod();
