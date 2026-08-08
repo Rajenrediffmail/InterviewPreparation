@@ -78,8 +78,27 @@ public class DuplicateCharacterCount
 	
 	// JAVA 8 
 	
+	// Use Java 8 Streams to count duplicate characters
+	public static Map<Character, Long> countDuplicateCharacters(String str) {
+		return str.chars()
+				.mapToObj(c -> (char) c)
+				.collect(Collectors.groupingBy(Function.identity(), Collectors.counting()));
+	}
+	//easy way to find duplicate character count in string
+	public static Map<Character, Long> countDuplicateCharactersEasyWay(String str) {
+		
+		return str.chars()
+				.mapToObj(c -> (char) c)
+				.collect(Collectors.groupingBy(Function.identity(), Collectors.counting()));
+	}
 	
-	
+	//find duplicate string in array
+	public static Map<String, Long> countDuplicateStrings(String[] arr) {
+		
+		return java.util.Arrays.stream(arr)
+				.collect(Collectors.groupingBy(Function.identity(), Collectors.counting()));
+		
+	}
 	
 
 }
