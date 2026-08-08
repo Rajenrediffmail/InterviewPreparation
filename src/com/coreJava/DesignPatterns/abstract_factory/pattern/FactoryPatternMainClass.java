@@ -9,6 +9,8 @@ public class FactoryPatternMainClass {
 		vehicle = Optional.ofNullable(null);
 		System.out.println(""+vehicle.map(s -> "This is " + s + "!").orElse("this is not car!"));
 		
+
+		
 		
 	}
 
